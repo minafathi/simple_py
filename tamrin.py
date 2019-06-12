@@ -1,16 +1,12 @@
-my_number = 10
-print(f"my number is {my_number}")
-if my_number % 2 == 0:
-    message = "It's Even"
-else:
-     message = "It's Odd"
-print(message)
+def fizz_buzz(input):
+    if (input % 3 == 0) and (input % 5 == 0):
+        return "Fizz Buzz"
+    elif input % 3 == 0:
+        return "Fizz"
+    elif input % 5 == 0:
+        return "Buzz" 
+    else:
+        return input
 
-my_number += 1
-print(f"my number plus 1 is {my_number}")
 
-if my_number % 2 == 0:
-    message2 = "Now it became Even"
-else:
-     message2 = "Now it became Odd"
-print(message2)
+print(fizz_buzz(15))
