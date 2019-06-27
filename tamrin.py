@@ -1,12 +1,25 @@
-def fizz_buzz(input):
-    if (input % 3 == 0) and (input % 5 == 0):
-        return "Fizz Buzz"
-    elif input % 3 == 0:
-        return "Fizz"
-    elif input % 5 == 0:
-        return "Buzz" 
-    else:
-        return input
+class simple_math:
 
+    def __init__(self, a, b):
+        self.x = a
+        self.y = b
 
-print(fizz_buzz(15))
+    def plusme(self):
+        result = self.x + self.y
+        return result
+
+    def minesme(self):
+        result = self.x - self.y
+        return result
+    
+    def multiplicationme(self):
+        result = self.x * self.y
+        return result
+
+    def divisionme(self):
+        result = self.x / self.y
+        return result
+
+my_var = simple_math(9, 3)
+print(my_var.divisionme())
+print(my_var.plusme())
